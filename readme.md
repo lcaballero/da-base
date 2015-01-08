@@ -2,11 +2,11 @@
 
 # Introduction
 
-`da-base` is an in-memory data store.  It provides access to via the underlying data
+`da-base` is an in-memory data store.  It provides access to the underlying data via
 a [lodash][lodash] like interface.  The code is based on two classes `DaBase` and
 `Chained`.  The first holds the complete data of the database and the second provides
-access to single collections.  Collections are typically intended to be arrays of
-data, but that's not an explicit limitation.
+access to a single collections.  Collections are typically arrays of data, but that's
+not an explicit limitation.
 
 ## Usage
 

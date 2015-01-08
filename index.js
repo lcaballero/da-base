@@ -1,2 +1,2 @@
 #!/usr/bin/env coffee
-module.exports = require("./src/DaBase")
+module.exports = require("./src/da-base")

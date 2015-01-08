@@ -1,7 +1,7 @@
 {
   "name": "da-base",
   "version": "0.0.1",
-  "description": "A flat file (json) db using lowdash, and providing a mongo like interface.",
+  "description": "A flat file (json) db using lodash, and providing a mongo like interface.",
   "author": "lucas.caballero",
   "main": "index.js",
   "keywords": [
@@ -13,7 +13,7 @@
   "license": "Eclipse Public License (EPL)",
   "repository": "https://github.com/lcaballero/da-base.git",
   "scripts": {
-    "test": "mocha --reporter list --compilers coffee:coffee-script/register tests"
+    "test": "mocha --require tests/lib/globals.coffee --reporter list --compilers coffee:coffee-script/register tests/src/*"
   },
   "dependencies": {
     "coffee-script": "^1.8.0",

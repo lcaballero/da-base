@@ -16,7 +16,7 @@ module.exports = do ->
       parse : JSON.parse
 
     @toAbsolute = (name, dir) ->
-      dir  ?= Base._defaults.dir
+      dir  ?= DaBase._defaults.dir
       name  =
         if /\.json$/.test(name)
         then name
@@ -35,10 +35,10 @@ module.exports = do ->
       if opts.file? and fs.existsSync(opts.file)
         opts.json = fs.readFileSync(opts.file)
 
-      opts       = _.defaults(opts, Base._defaults)
+      opts       = _.defaults(opts, DaBase._defaults)
 
       @defaults  = opts
-      @file     ?= opts.file or Base.toAbsolute(opts.name, @defaults.dir)
+      @file     ?= opts.file or DaBase.toAbsolute(opts.name, @defaults.dir)
       @data      = opts.parse(opts.json)
 
     ###

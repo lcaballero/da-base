@@ -58,7 +58,7 @@ parsed using the parse function.
 ##### write(file)
 
 Writes the underlying data as JSON to the Database file.  The file name is derived
-as from the DB file and name options "dir/name.json" which would defaults to
+from the dir and file and name options "dir/name.json" which would defaults to
 "file/db.json".
 
 ##### save(name, [val])
@@ -97,7 +97,7 @@ be saved to the collection name.
 
 Writes the Database to file WITHOUT using the current data of the Chained
 instance.  Typically, `commit()` is called prior `write()` to first push
-the data into the database and the serialize that data to file.
+the data into the database and then serialize that data to file.
 
 ##### chainable lodash functions
 
